@@ -1,0 +1,69 @@
+\usepackage[margin=0.5in]{geometry}
+\usepackage[foot]{amsaddr}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{braket}
+\usepackage{mathtools}
+\usepackage{caption}
+\usepackage{mathrsfs}
+\usepackage{latexsym}
+\usepackage{epsfig}
+\usepackage{amsmath,amsfonts,amsthm,amssymb,amscd,bbm}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{url}
+%\usepackage{breakurl}
+
+\usepackage{lscape}
+\newcommand{\bland}{\begin{landscape}}
+\newcommand{\eland}{\end{landscape}}
+
+
+\newcommand{\bburl}[1]{\textcolor{blue}{\url{#1}}}
+
+\definecolor{maroon}{rgb}{0.5, 0.0, 0.0}
+
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={Apoorva Lal},
+             pdfkeywords = {},
+            colorlinks=true,
+            citecolor=maroon,
+            urlcolor=blue,
+            linkcolor=blue,
+            pdfborder={0 0 0}}
+\urlstyle{same}  % don't use monospace font for urls
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+
+\usepackage{tikz}
+\usepackage{tkz-tab}
+\usepackage{tkz-graph}
+\usetikzlibrary{shapes.geometric,positioning}
+\newcommand{\blue}[1]{\textcolor{blue}{(\bf{#1})}}
+\newcommand{\emaillink}[1]{\textcolor{blue}{\href{mailto:#1}{#1}}}
+\newcommand{\burl}[1]{\textcolor{blue}{\url{#1}}}
+\newcommand{\fix}[1]{\textcolor{red}{\textbf{ (#1)\normalsize}}}
+\newcommand{\fixed}[1]{\textcolor{green}{~\\ \textbf{#1\normalsize}}\\}
+\newcommand{\ind}{\otimes}
+\newcommand{\witi}{\widetilde}
+\newcommand{\ch}{{\bf 1}}
+\newcommand{\dt}[1]{\witi{\witi #1}}
+\newcommand{\ol}[1]{\overline{#1}}
+\newcommand{\lr}[1]{\left\lfloor#1\right\rfloor}
+\newcommand{\eqd}{\overset{\footnotesize{d}}{=}}
+\newcommand{\calf}{{\mathcal F}}
+\newcommand{\cal}{\mathcal}
+
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+\numberwithin{equation}{section}
+
+
+\input{math_shortcuts.tex}

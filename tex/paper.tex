@@ -1,0 +1,68 @@
+\documentclass[12pt,reqno]{amsart} % add titlepage param for separate title page
+% nice AMS math paper template from Steven Miller at Williams
+% original can be downloaded at
+% https://web.williams.edu/Mathematics/sjmiller/public_html/math/LaTexMathematica/papertemplate.tex
+\input{mpaper_boilerplate}
+\usepackage{graphics}
+\usepackage{lipsum} %This package just generates Lorem Ipsum filler text.
+
+% bibliography
+\usepackage[
+backend=biber,
+style=authoryear,
+citestyle=authoryear,
+]{biblatex}
+\addbibresource{papers.bib}
+
+\renewbibmacro{in:}{}
+
+\setcounter{secnumdepth}{5}
+
+% font
+% \usepackage{libertine}
+% \usepackage{fourier}
+% \usepackage{mathpazo}
+% \usepackage{mathptm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{A model of separatist piggybacking}
+\author{Apoorva Lal}
+\email{{\href{mailto:apoorval@stanford.edu}{apoorval@stanford.edu}}}
+\address{Stanford University, CA}
+
+
+\author{Tobias Nowacki}
+\email{{\href{mailto:toby@stanford.edu}{toby@stanford.edu}}}
+\address{Stanford University, CA}
+
+\keywords{KW1, KW2}
+\date{\today}
+
+\begin{document}
+
+\begin{abstract} Abstract
+\end{abstract}
+
+\maketitle
+
+% \tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction} \label{intro}
+
+\lipsum[4]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\mkbibnamefamily}[1]{\textsc{#1}}
+\printbibliography
+
+\appendix
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\medskip
+
+\end{document}
