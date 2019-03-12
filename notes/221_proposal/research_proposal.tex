@@ -1,0 +1,49 @@
+\documentclass[11pt]{article}
+\input{header}
+\usepackage[long, nodayofweek]{datetime}
+\usepackage[style = authoryear]{biblatex}
+
+\addbibresource{coalitionvoting.bib}
+\AtEveryBibitem{\clearfield{month}}
+
+\title{Coalition-directed voting under uncertainty: An Experiment}
+\author{Tobias Nowacki\thanks{Stanford University, Calif., USA. \texttt{tnowacki@stanford.edu}}}
+
+% Begin Document
+\begin{document}
+
+\maketitle
+
+\onehalfspacing
+
+\section{Introduction}
+
+There is an emerging literature on coalition-directed strategic voting in PR systems: voters not only take into account their preferences over party policy, but also possible coalitions between parties and their likely policy points.\footnote{Blurb about how coalition-directed 'strategic' voting is actually not strategic at all.}
+
+For the most part, however, the literature assumes that voters \textit{know} which coalition is likely to form - either because they can infer from past coalition behaviour \parencite{Armstrong2010} or because the pre-election period involves unambiguous coalition signals. Our theoretical intuition is less well developed when voters are uncertain about (a) the set of arithmetically possible coalitions and (b) parties preferred coalition outcomes (though, for a formal treatment, see \cite{Herrmann2014}). Such situations do occur, primarily when elections are close and/or the party system is undergoing a major change that prevents voters from drawing on past knowledge.\footnote{Germany 2017 as an example -- multiple coalitions possible.}
+
+The contribution of this paper will be a further insight into how voters anticipate coalition formation in settings with uncertainty, and how this translates into their strategic voting behaviour. I propose an experiment where respondents are faced with randomised vignettes that contain pre-election polling scenarios. The differences in expected election outcomes should update respondents' beliefs about the likelihood of coalitions forming, and thus, conditional on the voters policy preferences, induce variance in the incentive to engage in coalition-directed voting.
+
+\section{Literature}
+
+\textcite{Duch2010} gives voters the following utility function:
+
+\begin{equation}
+    u_i(j) = \lambda {\beta (U - \sum_{n = 1}^{Ncj}(x_i - Z_{cjn})^{2} \gamma_{cjn}) + (1 - \beta) (U - (x_i - p_j)^2)} + \phi {\bf W}_i 
+\end{equation}
+
+Regarding $\gamma_{cjn}$
+
+\textcite{Herrmann2014} looks at voters' chance of being pivotal instead -- in the simple four-party model there are three different types of voters, and depending on which situation is more likely, they vote for one of the two parties. (Here, the difference is that $\gamma$ is affected by the voter's decision!)
+
+\begin{quotation}
+    The voter is not making a strategic calculation regarding the likelihood of particular coalitions forming; rather, he or she is simply assessing the likelihood of different coalition partners given that the party does govern (p. 701)
+\end{quotation}
+
+\section{Theory}
+
+\renewcommand*{\mkbibnamefamily}[1]{\textsc{\textbf{#1}}}
+\renewcommand*{\mkbibnamegiven}[1]{\textsc{#1}}
+\printbibliography
+
+\end{document}

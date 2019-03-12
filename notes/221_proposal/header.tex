@@ -1,0 +1,40 @@
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amsthm, amsfonts, amssymb}
+\usepackage{mathrsfs}           % \mathscr font.
+\usepackage{setspace}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue,breaklinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage[style = authoryear, autocite=inline, doi=false,isbn=false,url=false]{biblatex}
+\usepackage[sc]{titlesec} % make section headings \sffamily
+
+% Header styling
+% make headers \sffamily
+\newpagestyle{main}[\sffamily]{
+    \sethead{\thepage}{}{\sectiontitle}
+    }
+\pagestyle{main}
+\usepackage{titling}
+% make titling elements \sffamily
+\pretitle{\begin{center}\sc \LARGE}
+\preauthor{\begin{center}
+            \large\sffamily \lineskip 0.5em%
+            \begin{tabular}[t]{c}}
+\predate{\begin{center}\sffamily\large}
+\usepackage{abstract}
+% make abstract title \sffamily
+\renewcommand\abstractnamefont{\sffamily}
+\titleformat{\section}[block]{\filcenter \Large \sc}{\thesection}{1em}{}
+\usepackage{caption}
+\captionsetup{font=sf, labelfont = bf}
+
+% Define symbols and maths shortcuts
+\DeclareRobustCommand{\bbone}{\text{\usefont{U}{bbold}{m}{n}1}}
+\DeclareMathOperator{\EX}{\mathbb{E}} % expected value
+\DeclareMathOperator{\V}{\mathbb{V}}
+\DeclareMathOperator{\Prob}{\mathbb{P}}
+\newcommand*{\trans}{^{\mathsf{T}}} %matrix transpose
