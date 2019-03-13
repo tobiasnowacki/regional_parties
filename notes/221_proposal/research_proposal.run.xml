@@ -79,7 +79,7 @@
       <file>research_proposal.bcf</file>
     </requires>
     <requires type="editable">
-      <file>coalitionvoting.bib</file>
+      <file>../../literature/leapfrogging.bib</file>
     </requires>
   </external>
 </requests>
