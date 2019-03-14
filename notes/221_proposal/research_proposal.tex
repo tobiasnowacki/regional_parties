@@ -22,26 +22,28 @@
 
 Blurb about what we want to do with this paper.
 Another blurb about what this research proposal does.
+Why is this important?
 
-\section{Literature}
+\section{Literature and Motivation}
 
-Base this on ethnic outbidding; initial logic captured in Horowitz. Some studies show that ethnic outbidding does occur in European party systems. But so far no attempt to model the underlying mechanism. 
+The idea of ethnic outbidding suggests that cross-ethnic or centrist coalitions cannot hold because its constituent ethnic parties are vulnerable to more extreme challengers; this results in a spiral of more and more extreme policy positions \parencite{Horowitz2000, Rabushka1972, Chandra2005}. Horowitz's contribution in particular sparked a large literature on ethnic politics; the term `ethnic outbidding' is widely used and referenced in relation to ethnicity-based parties. The role of elections in spurring ethnic conflict has also been considered (e.g., Cederman et al., 2012); however, this literature takes an \textit{ex post} perspective, analysing the likelihood of conflict after an election has taken place. Instead, the idea of ethnic outbidding suggests that there is something inherent about the \textit{ex ante} competition that leads to increasingly polarised positions and, at worst, conflict and the breakdown of the polity.
 
-Ethnic outbidding model in \textcite{Chandra2005}: one centrist party (multiethnic coalition). Vulnerable to challengers from left/right. But if parties are office-seeking, it is not clear how a challenger to either side of the median can capture a larger vote-share... that is, the median position of the coalition should discourage challengers (unless they don't care about winning!)
+Empirically, the phenomenon of increasingly more extreme ethnic parties has been widely observed, both in established democratic politics, such as Northern Ireland / UK (references here) or Catalonia / Spain, as well as in developing countries (e.g., Sri Lanka, see DeVolta 2005; Moldova, see Kaufman 1996). (Include some more about Catalonia?)
 
-This might be slightly different if we suddenly move from a two-party to a four-party world. That alone is a strong modelling assumption. But even then, the 'extreme' equilibrium only holds that the distribution of preferences is fully bipolar and there are no intermediate voters (this is crucial, acknowledged so much in fn. 12).
+Yet, the mechanism that leads to increasingly polarised parties has not resulted in a large formal-theoretical literature, for some reason. If we think of ethnicity as a continuous `policy dimension' with voters distributed across it, the classic Downsian model would predict convergence and a moderate stance. Furthermore, the threat from challengers implicitly assumes some form of entry mechanism that is not specified any clearer. Some attempts at a formalisation of the mechanism impose additional assumptions: in \textcite{Chandra2005}, for example, the depiction of Horowitz's theory requires that preferences are distributed fully dichotomously, doing away with a continuous distribution of voters.
 
-Instead, we show how we can get divergence towards the extremes when we have two different levels of elections, and two regional parties are in competition with one another.
+The model developed in this research proposal seeks to connect to this literature by offering a novel mechanism through which we can explain ethnic parties settling in a policy position that is more extreme than the median. Although the motivation primarily comes from regional parties in Europe (e.g., Catalonia), the underlying model can be applied to other policy areas, too. The crucial assumption here is that the national distribution of preferences is centred around one extreme of the policy dimension, whereas the regional one is distributed evenly or in a polarised fashion across both.
 
-Important question: polarisation driven by elite preferences or by voters?
+Another key question is whether the empirically observed process of polarisation is driven by changes in voters' preferences, or induced by party elites (and parties' changing policy positions). This research proposal seeks to explain ethnic polarisation as an outcome of the latter (for party-driven `ethnic outbidding' in Catalonia, see \textcite{Barrio2017}). That said, elite-driven polarisation may later induce a shift in voters' preferences, too \parencite[p. 291]{Horowitz2000}, which further contributes to the destabilisation of the polity.
+
+In summary, the idea for a contribution here is to offer a theory of multi-level elections, and how differences in the preference distribution between regional and national electorates can lead to divergence from the median voter position if multiple regional parties compete with each other. This can be applied to ethnicity or regional autonomy as examples of policy dimensions with strongly divergent preference distributions in the nation and the region; the regional competition may lead to parties advocating more extreme positions that may, in turn, threaten the unity of the polity and/or the democratic process.
 
 \section{Theoretical framework: baseline}
 
-National and regional distribution of preferences; parties are office-seeking. National party values national election more, regional parties only care about regional office.
+The general framework of the model is as follows: let there be two separate elections - one at the national level, and one at the regional level, with separate electorates (or we can assume that the regional electorate is a subset of the national one). There is a continuuous, unidimensional policy space $P \in [0, 1]$. Our main policy dimension of interest is ethnicity, or regional autonomy, but this could be substituted for any other policy dimension that exhibits the kinds of differences described below.\footnote{Ethnicity here would not be dichotomous, but a continuous dimension, e.g., voters can feel half-Spanish, half-Catalan. Perhaps thinking about it in a 'regional autonomy' way (secession all the way to centralised state) is a better way.} Let the dimension range from 0 to 1. The distribution of preferences between the two electorates differs: the national electorate is tightly clustered around one extreme (the unionist one), such that the median voter $\tilde{v}_N = 0.9$, whereas the regional electorate is either uniform or polarised around both extremes, and $\tilde{v}_R = 0.5$. For now, assume that the regional electorate is distributed uniformly with support $[0, 1]$.
 
-The general framework of the model is as follows: let there be one national party, $N$, and either one or two regional parties, $R_1$ and $R_2$. There are two, separate elections: one for the regional legislature, and one for the national legislature. $N$ competes in the national and the regional elections, whereas $R_1, R_2$ only compete in the regional election. At first, let parties be office-oriented, that is, they set their policy such that they maximise their probability of winning. $N$ primarily cares about winning elections to the national legislature, and will prioritise winning these. (Further extensions of the model may weaken this assumption.)
+For the purpose of the baseline model, let there be one national party, $N$, that competes in both the national and the regional election, and up to two regional parties, $R_1, R_2$, that only compete in the regional elections. Furthermore, I impose the following two assumptions:
 
-Two crucial assumptions:
 \begin{assumption}
     The national party runs in both the national and the regional election, but cares about winning office in the national election; the regional parties only run in the regional election and care about winning in it.
 \end{assumption}
@@ -49,17 +51,12 @@ Two crucial assumptions:
     The national party can only set one policy position, $p_N$, with which it has to run in both elections.
 \end{assumption}
 
-(Justify Assumption 2).
+Assumption 1 can be rationalised as follows: the national party cares about the `bigger' office but in order to bolster its claim that it is a nation-wide party, it also has to run in all sub-national elections regardless of whether it anticipates to win or not. (This is not unlike the Spanish Partido Popular in Spain / Catalonia). Regional parties, on the other hand, by default only care about the regional election. Assumption 2 follows from a model of parties as uniform and centralised actors, which may be especially fitting for unionist parties that seek greater centralisation.
 
-Next, define the voter distribution for the two elections as follows: there is a continuuous, unidimensional policy space $P \in [0, 1]$. This policy space can represent the issue of regional autonomy (secession versus centralised government, for example), or how to split tax revenues between the national government and the regional government. It can also represent some other issue where preferences diverge heavily between the region and the rest of the country.
+Finally, for the purpose of this baseline model, let all parties be office-seeking, that is, they want to maximise their vote share.
 
-Let the distribution of voters in the national election be such that the median national voter is located at $\tilde{v}_N = 0.9$, that is, very close the 'unionist' pole of the policy dimension.\footnote{Not sure if a more specific functional form is necessary here -- national median is doing all the work in the model so far.} The distribution of voters in the regional election, for now, is a uniform distribution $\mathcal{F}_R \sim U[0, 1]$, such that $v_R = 0.5$.
+It follows from Assumption 1 that $N$ will determine its policy position ($p_N$) with respect to the national electorate; following the median voter theorem, it will always position itself at the national median, such that $p_N = \tilde{v}_N$. From this follows that $N$ will also compete in the regional elections with the same policy position, which, however, is far to the right of the \textit{regional} median. In the next subsections, I will show how regional parties react to this setting and how this may lead to two regional parties to the left of the median voter in equilibrium. This result may offer a first shot at a formal mechanism for elite-driven 'ethnic outbidding'.
 
-Following the median voter theorem, parties competing in the national arena will thus have a strong incentive to place their policy position at this national median voter, such that $p_N = v_N = 0.9$.\footnote{Need to go into detail about one versus multiple national parties} By Assumption 2, they also have to take this position in the regional election, even though it may not be their best strategy. (However, since they primarily care about winning in the national election, $N$ will want to optimise for that)
-
-Now, if the regional parties, $R_1, R_2$ competed for regional office in isolation, the median voter theorem would apply in the same sense, and both parties would locate themselves at $p_{R1} = p_{R2} = 0.5$. However, the existence of the national party, and its 'anchoring' at $0.9$, means that parties no longer converge at $0.5$. 
-
-In the following subsections, I demonstrate how this leads to regional parties in competition with each other adopting policy positions to the left of the median voter (in equilibrium). This result may offer a first shot at a formal mechanism for elite-driven 'ethnic outbidding'.
 
 \subsection{One regional party}
 
@@ -88,7 +85,7 @@ In the following subsections, I demonstrate how this leads to regional parties i
          \coordinate (end)  at (10, 0);
          \foreach \n in {orig, r1, med, N, end} \fill [black] (\n) circle (2pt);
      \end{tikzpicture}
-     \caption{One national and one regional party; uniform distribution.} \label{fig:mod1}
+     \caption{One national and one regional party; uniform distribution (regional electorate).} \label{fig:mod1}
  \end{figure}
 
  First, assume that there is only one regional party, $R_1$, that competes with $N$. 
@@ -127,7 +124,7 @@ In practice, however, the regional party may position itself closer towards the 
          \coordinate (end)  at (10, 0);
          \foreach \n in {orig, r1, med, N, end} \fill [black] (\n) circle (2pt);
      \end{tikzpicture}
-     \caption{One national and two regional parties; uniform distribution of voters.} \label{fig:mod1}
+     \caption{One national and two regional parties; uniform distribution (regional electorate).} \label{fig:mod1}
  \end{figure}
 
 Next, suppose that there are two regional parties, $R_1$ and $R_2$ that compete together with $N$. I keep the assumption of uniformly distributed voters for now, before discussing a more general case in the next subsection.
@@ -184,17 +181,28 @@ Main result: the more polarised the distribution becomes, the bigger is the devi
     \item The more accommodating the national party is, the more extreme will the positions of the regional parties be.
 \end{itemize}
 
-\section{Theoretical framework: possible extensions}
+\begin{figure}
+    \centering
+    \includegraphics{../../output/polarisation.pdf}
+    \caption{Equilibrium positions under different parameter values for Beta distribution.}
+    \label{fig:betadist}
+\end{figure}
 
-\subsection{Policy-oriented parties}
+\section{Extensions and challenges}
 
-\subsection{Uncertainty}
+\subsection{Model extensions}
 
-\subsection{Dynamic model}
+\textsc{Policy-oriented parties.}
 
-\subsection{Coalition politics}
+\textsc{Uncertainty.}
 
-\section{Application (?)}
+\textsc{Electoral system.}
+
+\textsc{Dynamics.}
+
+\subsection{Empirical extension \& Application}
+
+
 
 \section{Conclusion}
 

@@ -1975,7 +1975,12 @@
     <bcf:datasource type="file" datatype="bibtex">../../literature/leapfrogging.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1">Horowitz2000</bcf:citekey>
+    <bcf:citekey order="1">Rabushka1972</bcf:citekey>
     <bcf:citekey order="1">Chandra2005</bcf:citekey>
+    <bcf:citekey order="2">Chandra2005</bcf:citekey>
+    <bcf:citekey order="3">Barrio2017</bcf:citekey>
+    <bcf:citekey order="4">Horowitz2000</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
