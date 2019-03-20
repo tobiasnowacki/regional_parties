@@ -1978,9 +1978,19 @@
     <bcf:citekey order="1">Horowitz2000</bcf:citekey>
     <bcf:citekey order="1">Rabushka1972</bcf:citekey>
     <bcf:citekey order="1">Chandra2005</bcf:citekey>
-    <bcf:citekey order="2">Chandra2005</bcf:citekey>
+    <bcf:citekey order="2">Coakley2008</bcf:citekey>
+    <bcf:citekey order="2">Mitchell2009</bcf:citekey>
+    <bcf:citekey order="2">Moore2014</bcf:citekey>
+    <bcf:citekey order="2">DeFazio2016</bcf:citekey>
     <bcf:citekey order="3">Barrio2017</bcf:citekey>
-    <bcf:citekey order="4">Horowitz2000</bcf:citekey>
+    <bcf:citekey order="4">DeVotta2005</bcf:citekey>
+    <bcf:citekey order="5">Chandra2005</bcf:citekey>
+    <bcf:citekey order="6">Zuber2015</bcf:citekey>
+    <bcf:citekey order="7">Barrio2017</bcf:citekey>
+    <bcf:citekey order="8">Horowitz2000</bcf:citekey>
+    <bcf:citekey order="9">Szocsik2015</bcf:citekey>
+    <bcf:citekey order="10">Alonso2013</bcf:citekey>
+    <bcf:citekey order="11">Horowitz2000</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
