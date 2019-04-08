@@ -43,8 +43,8 @@ beta_tables <- lapply(as.list(beta_par), function(x) calc_pos(0.9, x))
 beta_tables <- do.call(rbind, beta_tables)
 
 ggplot(beta_tables, aes(x = x)) +
-  geom_area(data = beta_tables[beta_tables$vote == "R", ], aes(x = x, y = dens, alpha = .3), fill = "red") +
-  geom_area(data = beta_tables[beta_tables$vote == "N", ], aes(x = x, y = dens, alpha = .3), fill = "blue") +
+  geom_area(data = beta_tables[beta_tables$vote == "R", ], aes(x = x, y = dens), fill = "red", alpha = .3) +
+  geom_area(data = beta_tables[beta_tables$vote == "N", ], aes(x = x, y = dens), fill = "blue", alpha = .3) +
   geom_vline(aes(xintercept = R)) +
   geom_vline(aes(xintercept = N)) +
   facet_wrap(. ~ beta_par) +
